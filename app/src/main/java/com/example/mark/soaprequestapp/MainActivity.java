@@ -1,24 +1,14 @@
 package com.example.mark.soaprequestapp;
-
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-
-
-import com.example.mark.soaprequestapp.R;
-
 import java.io.IOException;
-import java.io.UnsupportedEncodingException;
-import java.net.URLEncoder;
-
 import okhttp3.Call;
 import okhttp3.Callback;
 import okhttp3.Headers;
-import okhttp3.MediaType;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
-import okhttp3.RequestBody;
 import okhttp3.Response;
 import okhttp3.ResponseBody;
 
@@ -45,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void run() throws Exception {
         Request request = new Request.Builder()
-                .url("https://web.rbsuat.com/kn/rest/register.do?amount=100&orderNumber=138&password=polycard&returnUrl=https://web.rbsuat.com/kn/merchants/rbs/finish.html&userName=polycard-api")
+                .url("https://web.rbsuat.com/kn/rest/register.do?amount=100&orderNumber=138&password=t&returnUrl=https://web.rbsuat.com/kn/merchants/rbs/finish.html&userName=t")
                 .build();
 
         client.newCall(request).enqueue(new Callback() {
